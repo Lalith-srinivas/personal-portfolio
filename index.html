@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<a href="#top" id="topBtn" title="Back to Top">↑</a>
+
+<body>
+
+    <!-- Navbar -->
+
+    <header class="fadeIn">
+        <div class="logo">
+            <h1>portfolio</h1>
+        </div>
+        <div class="list">
+            <i class="fa-solid fa-bars menu" id="menu-toggle"></i>
+            <ul id="nav-links">
+                <li><a class="first" href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- portfolio page -->
+
+    <div class="container">
+        <div class="content fadeIn">
+            <h2>Hello, It's Me</h2>
+            <h1>Lalith Srinivas</h1>
+            <h3>And I'm a <span>Frontend Developer</span></h3>
+            <div class="icons">
+                <a href="https://github.com/Lalith-srinivas"><i class="fa-brands fa-github"></i></a>
+                <!-- <i class="fa-brands fa-twitter"></i> -->
+                <a href="https://www.instagram.com/lalith_1267_"><i class="fa-brands fa-instagram"></i></a>
+                <!-- <i class="fa-brands fa-youtube"></i> -->
+                <a href="http://www.linkedin.com/in/lalith-pattem-81888a32b"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <button><a class="resume" href="resume1.pdf">Resume</a></button>
+        </div>
+        <div class="profile fadeIn">
+            <img src="me.jpg" alt="profile">
+        </div>
+    </div>
+
+    <!-- about -->
+
+    <a name="about"></a>
+    <div class="about scroll">
+        <h1>About <span>Me</span></h1>
+        <img src="me.jpg">
+        <div class="about-para">
+            <p>I'm currently pursuing my BTech in Information Technology at SVCE, Tirupati with a passion for building
+                impactful digital experiences. I'm on a journey to become a Full Stack Web Developer, with a strong
+                interest in integrating AI into web applications.
+
+                Right now, I'm focusing on sharpening my HTML, CSS, and JavaScript skills, and actively working on
+                projects to improve my frontend and backend development capabilities. I enjoy solving real-world
+                problems through code, and I'm always open to learning new tools and technologies.
+
+                I'm also seeking opportunities to gain industry experience through internships and collaborations. Let's
+                connect and grow together in tech!</p>
+        </div>
+        <button>More About Me</button>
+    </div>
+
+    <!-- skills -->
+
+    <div class="skills">
+        <a name="skills"></a>
+        <h1>My <span>Skills</span></h1>
+        <div class="skills-container">
+            <div class="skill-card scroll">HTML5</div>
+            <div class="skill-card scroll">CSS3</div>
+            <div class="skill-card scroll">JavaScript</div>
+            <div class="skill-card scroll">Responsive Design</div>
+            <div class="skill-card scroll">Git & GitHub</div>
+            <div class="skill-card scroll">JavaScript DOM</div>
+            <div class="skill-card scroll">AI Tools (Exploring)</div>
+            <div class="skill-card scroll">leadership</div>
+        </div>
+    </div>
+
+    <!-- Projects -->
+
+    <div class="project-container">
+        <a name="projects"></a>
+        <h1><span>My</span>Projects</h1>
+        <div class="projects">
+            <div class="link">
+                <div class="project1 scroll project">
+                    <div class="blur"></div>
+                </div>
+                <a href="http://surya-collections.netlify.app">clickMe</a>
+            </div>
+            <div class="link">
+                <div class="project2 scroll project">
+                    <div class="blur"></div>
+                </div>
+                <a href="https://lalith-srinivas.github.io/tic-tac-toe-game/ ">clickMe</a>
+            </div>
+            <div class="link">
+                <div class="project3 scroll project">
+                    <div class="blur"></div>
+                </div>
+                <a href="https://redscreenx.netlify.app/">clickMe</a>
+            </div>
+            <div class="link">
+                <div class="project4 scroll project">
+                    <div class="blur"></div>
+                </div>
+                <a href="https://lalith-srinivas.github.io/Login-Form-UI/ ">clickMe</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+<section class="contact" id="contact">
+  <h2>Contact Me</h2>
+  <form id="contact-form">
+    <input type="text" name="user_name" placeholder="Your Name" required />
+    <input type="email" name="user_email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+    <span id="form-message"></span>
+  </form>
+</section>
+
+
+
+    <footer>
+        <div class="footer-container">
+            <p>© 2025 Lalith Srinivas. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "NEpD3ujdTLO2yNDZZ",
+      });
+   })();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  emailjs.init("NEpD3ujdTLO2yNDZZ");
+
+  document.getElementById("contact-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    emailjs.sendForm("service_sc98lvp", "template_6yf3v91", this)
+      .then(() => {
+        document.getElementById("form-message").innerText = "Message sent successfully!";
+        alert("Thank You for sending Message");
+        this.reset();
+      }, (error) => {
+        document.getElementById("form-message").innerText = "Failed to send message.";
+        console.error(error);
+      });
+  });
+</script>
+
+</body>
+
+</html>
